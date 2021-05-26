@@ -20,8 +20,6 @@ def main():
     data = get_data()
     data = clean_data(data)
     
-
-
 def get_data(): 
     csv_name = "Experiência2.csv"
     data = pd.read_csv(csv_name, sep=";", encoding= 'utf-8')
