@@ -1,14 +1,14 @@
 import numpy as np
 import pandas as pd
-import tensorflow as tf
-import plotly.graph_objects as go
+#import tensorflow as tf
+#import plotly.graph_objects as go
 import math
 from sklearn.preprocessing import OneHotEncoder
-from tensorflow import keras
+#from tensorflow import keras
 from matplotlib import pyplot as plt
-from plotly.subplots import make_subplots
+#from plotly.subplots import make_subplots
 
-
+print ("hello world1")
 
 # %matplotlib inline
 def main():
@@ -20,7 +20,7 @@ def main():
     return data
 
 def get_data(): 
-    csv_name = "Experieencia2.csv"
+    csv_name = "Experiencia2.csv"
     data = pd.read_csv(csv_name, sep=";", encoding= 'utf-8')
 
     return data
@@ -134,3 +134,6 @@ def dummies(data):
     data = data.drop(['Tamanho', 'Segmento'], axis=1)
     data = pd.concat([data, tamanho_dummies, segmento_dummies], axis=1)
     return data
+
+
+print(main())
